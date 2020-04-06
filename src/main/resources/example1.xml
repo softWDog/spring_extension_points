@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+	<!-- Root Context: defines shared resources visible to all other web components -->
+	<bean id="student" class="com.gethin.extension.example1.StudentImpl" init-method="init" />
+
+	<bean id="teacher" class="com.gethin.extension.example1.TeacherImpl" init-method="init" />
+
+	<bean id="hellWorldBeanPostPostProcessor" class="com.gethin.extension.example1.HelloWorldBeanPostProcessor"/>
+
+	<bean id="helloWorldBeanPostFactoryProcesser" class="com.gethin.extension.example1.HelloWorldBeanPostFactoryProcesser"/>
+</beans>
